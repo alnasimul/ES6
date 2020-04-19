@@ -1,4 +1,4 @@
-let person = {
+let normalPerson = {
     firstName: "Al Nasimul",
     lastName: "Haque",
     salary: 20000,
@@ -13,12 +13,30 @@ let person = {
     } 
 }
 
-person.getFullName();
+let heroPerson = {
+    firstName: "Hero",
+    lastName: "Alom",
+    salary: 15000
+}
 
-person.chargeBill(150);
+// use of call function in object
 
-console.log(person.salary);
 
-person.chargeBill(10000);
+normalPerson.chargeBill.call(heroPerson,2000);
 
-console.log(person.salary);
+// use of apply function in object
+
+normalPerson.chargeBill.apply(heroPerson,[5000]);
+
+
+// person.getFullName();
+
+// person.chargeBill(150);
+
+// console.log(person.salary);
+
+// person.chargeBill(10000);
+
+// console.log(person.salary);
+console.log(heroPerson);
+console.log(heroPerson.salary);
