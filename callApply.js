@@ -19,12 +19,12 @@ let heroPerson = {
     salary: 15000
 }
 
-// use of call function in object
+// use of call property in object
 
 
 normalPerson.chargeBill.call(heroPerson,2000);
 
-// use of apply function in object
+// use of apply property in object
 
 normalPerson.chargeBill.apply(heroPerson,[5000]);
 
